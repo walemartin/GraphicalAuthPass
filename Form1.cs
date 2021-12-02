@@ -79,8 +79,8 @@ namespace GraphicalAuthPass
                 // Add input parameter for the stored procedure and specify what to use as its value.
                 Random nm = new();
 
-                sqlCommand.Parameters.Add(new SqlParameter("@ID", SqlDbType.Int));
-                sqlCommand.Parameters["@ID"].Value = nm.Next(1, 9999);
+                ////sqlCommand.Parameters.Add(new SqlParameter("@ID", SqlDbType.Int));
+                ////sqlCommand.Parameters["@ID"].Value = nm.Next(1, 9999);
 
                 sqlCommand.Parameters.Add(new SqlParameter("@userName", SqlDbType.NVarChar, 50));
                 sqlCommand.Parameters["@userName"].Value = username;
